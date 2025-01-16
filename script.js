@@ -1,6 +1,6 @@
 document.addEventListener('keydown', function (event) {
     if (event.code === 'Space') {
-        event.preventDefault(); // Prevent the default action of the spacebar (scrolling)
+        event.preventDefault();
         getRandomCiv();
     }
     else if (event.code === 'Enter') {

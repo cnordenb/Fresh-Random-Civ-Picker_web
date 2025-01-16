@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    margin-bottom: 300px; /* Add margin to detach from the main content */
+    margin-bottom: 300px; 
 }
 
 
@@ -41,14 +41,14 @@ body {
     width: 100%;
     height: 800px;
     resize: none;
-    background-color: #24282F; /* Change the background color of the history log */
-    color: #FFFFFF; /* Ensure the text color is readable */
+    background-color: #24282F; 
+    color: #FFFFFF; 
 }
 
 .reset-button {
     position: absolute;
     bottom: 15px;
-    left: 230px; /* Adjust this value to position the button to the right of the log */
+    left: 230px; 
 }
 
 .main-content {
@@ -89,13 +89,13 @@ button {
     }
 
 .output {
-    color: #fff; /* Change the text color of the output */
+    color: #fff; 
     font-size: 1.2em;
     margin-top: 20px;
 }
 
 .output2 {
-    color: #fff; /* Change the text color of the output */
+    color: #fff; 
     font-size: 1.2em;
     margin-top: 20px;
     position: absolute;
