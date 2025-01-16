@@ -110,6 +110,14 @@ button {
     text-align: center;
 }
 
+.footer2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    text-align: right;
+}
+
 .hotkeyLabel1 {
     font-style: italic;
     font-size: 15px;
