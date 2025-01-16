@@ -41,17 +41,21 @@ function getRandomCiv() {
     }
     const civ = civName(givenIndex);
     document.getElementById('output').innerText = `${civ} (${iterator + 1}/45)`;
-    document.getElementById('historyLog').value += `${civ} (${iterator + 1}/45)\n`;
+    const historyLog = document.getElementById('historyLog');
+    historyLog.value = `${civ} (${iterator + 1}/45)\n${historyLog.value}`;
     available[givenIndex] = 0;
     iterator++;
     remaining--;
 }
 
 function reset() {
+    historyLog.value = `\n${historyLog.value}`;
     iterator = 0;
     available = resetter();
     remaining = 45;
     document.getElementById('output').innerText = "? (0/45)";
-    document.getElementById('historyLog').value += `\r\n`;
 }
+
+
+
 

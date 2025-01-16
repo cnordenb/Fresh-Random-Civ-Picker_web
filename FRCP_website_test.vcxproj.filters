@@ -24,5 +24,8 @@
     <None Include="script.js">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="test.js">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

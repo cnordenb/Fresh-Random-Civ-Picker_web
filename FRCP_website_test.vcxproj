@@ -130,6 +130,7 @@
     <None Include="index.html" />
     <None Include="script.js" />
     <None Include="styles.css" />
+    <None Include="test.js" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
