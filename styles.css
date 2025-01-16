@@ -2,11 +2,17 @@ body {
     font-family: Arial, sans-serif;
     background-color: #2D333C;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+
+.header {
+    margin-bottom: 300px; /* Add margin to detach from the main content */
+}
+
 
 .container {
     background-color: #171D25;
@@ -14,6 +20,10 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .history {
@@ -31,12 +41,30 @@ body {
     width: 100%;
     height: 800px;
     resize: none;
+    background-color: #24282F; /* Change the background color of the history log */
+    color: #FFFFFF; /* Ensure the text color is readable */
+}
+
+.reset-button {
+    position: absolute;
+    bottom: 15px;
+    left: 230px; /* Adjust this value to position the button to the right of the log */
 }
 
 .main-content {
     text-align: center;
 }
 
+.text-body {
+    position: absolute;
+    right: 0px;
+    top: 380px;
+    width: 300px;
+    background-color: #16191D;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
 
 h1 {
     margin-bottom: 20px;
@@ -47,7 +75,7 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin: 5px;
     border: none;
     border-radius: 5px;
@@ -64,4 +92,36 @@ button {
     color: #fff; /* Change the text color of the output */
     font-size: 1.2em;
     margin-top: 20px;
+}
+
+.output2 {
+    color: #fff; /* Change the text color of the output */
+    font-size: 1.2em;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 75px;
+    left: 255px;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hotkeyLabel1 {
+    font-style: italic;
+    font-size: 15px;
+    position: absolute;
+    bottom: -25px;
+    left: 240px;
+    width: 300px;
+}
+
+.hotkeyLabel2 {
+    font-style: italic;
+    font-size: 15px;
+    position: center;
+    text-align: center;
 }

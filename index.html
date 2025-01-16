@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Random Civ Picker for AoE2DE</title>
+    <title>Fresh Random Civ Picker</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="FRCP-icon.ico" type="FRCP-icon">
 </head>
 <body>
     <div class="history">
         <h2 style="color:White;">Log</h2>
         <textarea id="historyLog" readonly></textarea>
+        <div id="output2" class="output2"></div>
+        <div class="reset-button">
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div class="hotkeyLabel1">
+            <p style="color:White;"> Hotkey: Enter </p>
+        </div>
+    </div>
+    <div class="header">
+        <h1 style="color:White;">Fresh Random Civ Picker</h1>
     </div>
     <div class="container">
         <div class="main-content">
-            <h1 style="color:White;">Fresh Random Civ Picker for AoE2DE</h1>
             <div id="output" class="output"></div>
             <div class="buttons">
-                <button onclick="getRandomCiv()">Get Random Civ</button>
-                <button onclick="reset()">Reset</button>
+                <button onclick="getRandomCiv()">Draw</button>
             </div>
         </div>
     </div>
+    <div class="hotkeyLabel2">
+        <p style="color:White;"> Hotkey: Space<br />(hold to draw several) </p>
+    </div>
+    <div class="text-body">
+        <p style="color:White;">Welcome to Fresh Random Civ Picker!<br /><br />With this site, you can draw a random civ which is never the same as one you drew recently (unless you've iterated through every single civ of the game).</p>
+    </div>
+    <footer class="footer">
+        <p style="color:White;">This site was made by <a href="https://youtube.com/hjoerleif" style="color: #007bff;">Hjörleif</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

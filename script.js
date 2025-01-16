@@ -1,3 +1,14 @@
+document.addEventListener('keydown', function (event) {
+    if (event.code === 'Space') {
+        event.preventDefault(); // Prevent the default action of the spacebar (scrolling)
+        getRandomCiv();
+    }
+    else if (event.code === 'Enter') {
+        event.preventDefault();
+        reset();
+    }
+});
+
 const civs = [
     "Armenians", "Aztecs", "Bengalis", "Berbers", "Bohemians", "Britons", "Bulgarians", "Burgundians",
     "Burmese", "Byzantines", "Celts", "Chinese", "Cumans", "Dravidians", "Ethiopians", "Franks",
@@ -11,7 +22,8 @@ let available = resetter();
 let iterator = 0;
 let remaining = 45;
 
-document.getElementById('output').innerText = `? (0/45)`;
+document.getElementById('output').innerText = `?`;
+document.getElementById('output2').innerText = `(0/45)`;
 
 function civName(index) {
     return civs[index] || "(no civ chosen)";
@@ -40,7 +52,8 @@ function getRandomCiv() {
         j++;
     }
     const civ = civName(givenIndex);
-    document.getElementById('output').innerText = `${civ} (${iterator + 1}/45)`;
+    document.getElementById('output').innerText = `${civ}`;
+    document.getElementById('output2').innerText = `(${iterator + 1}/45)`;
     const historyLog = document.getElementById('historyLog');
     historyLog.value = `${civ} (${iterator + 1}/45)\n${historyLog.value}`;
     available[givenIndex] = 0;
@@ -49,11 +62,12 @@ function getRandomCiv() {
 }
 
 function reset() {
-    historyLog.value = `\n${historyLog.value}`;
+    if (remaining < 45) historyLog.value = `\n${historyLog.value}`;
     iterator = 0;
     available = resetter();
     remaining = 45;
-    document.getElementById('output').innerText = "? (0/45)";
+    document.getElementById('output').innerText = "?";
+    document.getElementById('output2').innerText = "(0/45)";
 }
 
 
