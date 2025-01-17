@@ -133,3 +133,46 @@ button {
     position: center;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .history {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #historyLog {
+        height: 200px;
+    }
+
+    .reset-button {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .text-body {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .output2 {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .footer2 {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
