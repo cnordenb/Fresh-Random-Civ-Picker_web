@@ -52,3 +52,5 @@ function reset() {
     document.getElementById('output2').innerText = "(0/45)";
 }
 
+
+

@@ -26,11 +26,6 @@ function getRandomCiv() {
     const randomIndex = Math.floor(Math.random() * civs.length);
     let civ = civs.splice(randomIndex, 1)[0];
 
-    document.getElementById('output').innerText = `${civ}`;
-    document.getElementById('output2').innerText = `(${iterator + 1}/45)`;
-    const historyLog = document.getElementById('historyLog');
-    historyLog.value = `${civ} (${iterator + 1}/45)\n${historyLog.value}`;
-    iterator++;
 }
 
 function reset() {
@@ -48,8 +43,6 @@ function reset() {
 
     iterator = 0;
 
-    document.getElementById('output').innerText = "?";
-    document.getElementById('output2').innerText = "(0/45)";
 }
 
 
@@ -61,7 +54,7 @@ test('Completeness test tests that all civs are drawn', () => {
         getRandomCiv();
     }
     
-    expect(length(civs).toBe(0);
+    expect(civs.length).toBe(0);
     
 });
 
