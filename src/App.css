@@ -1,0 +1,111 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.log-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 160px;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.log-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.drawn-log {
+  width: 100%;
+  height: 90%;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.drawn-checkbox {
+  margin-right: 10px;
+}
+
+.clear-button {
+  margin-left: auto;
+}
+
+.remaining-log {
+  width: 100%;
+  height: 90%;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  margin-left: auto;
+}
+
+.remaining-checkbox {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+}
+
+.selected-civ {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.draw-button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.reset-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Existing styles */
+.logo {
+  height: 6rem;
+  padding: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
